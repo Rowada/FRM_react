@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background font-body flex justify-center items-center h-screen;
+  @apply bg-background font-body flex h-screen sm:justify-center sm:items-center;
 }
