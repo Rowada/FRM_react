@@ -7,8 +7,8 @@ export default {
         text: "hsl(234, 29%, 20%)",
         primary: "hsl(4, 100%, 67%)",
         secondary: "hsl(0, 0%, 100%)",
-        accent: "hsl(235, 18%, 26%)",
-        background: "hsl(231, 7%, 60%)",
+        accent: "hsl(231, 7%, 60%)",
+        background: "hsl(235, 18%, 26%)",
       },
       fontFamily: {
         heading: ['"Roboto"', "sans-serif"],
