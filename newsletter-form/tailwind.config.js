@@ -9,6 +9,7 @@ export default {
         secondary: "hsl(0, 0%, 100%)",
         accent: "hsl(231, 7%, 60%)",
         background: "hsl(235, 18%, 26%)",
+        hover: "#ff3e83",
       },
       fontFamily: {
         heading: ['"Roboto"', "sans-serif"],

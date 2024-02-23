@@ -14,7 +14,7 @@ export default function Form() {
           id="new"
         />
       </div>
-      <button className="block bg-text text-secondary font-bold text-sm rounded-md py-3 px-3">
+      <button className="block bg-text text-secondary font-bold text-sm rounded-md py-3 px-3 hover:bg-gradient-to-l hover:from-primary hover:to-hover">
         Subscribe to monthly newsletter
       </button>
       <span className="absolute top-0 right-5 md:right-10 font-bold text-xs text-primary">
