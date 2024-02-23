@@ -1,18 +1,31 @@
 // @ts-nocheck
+import { useState } from "react";
 import Form from "./components/Form/Form";
 import AsideImg from "./components/Header/AsideImg";
 import Header from "./components/Header/Header";
+import Success from "./components/Header/Success";
 
 function App() {
+  const [isSumitted, setIsSubmitted] = useState(false);
+  const [submittedEmail, setSubmittedEmail] = useState("");
+
+  const handleSubmit = (email) => {
+    setIsSubmitted(true);
+    setSubmittedEmail(email);
+  };
+
   return (
     <div className="bg-secondary h-screen w-screen md:h-full md:w-full md:p-4 md:rounded-3xl">
-      <div className="md:flex md:flex-row-reverse md:items-center md:justify-center">
-        <AsideImg />
-        <div>
-          <Header />
-          <Form />
+      {!isSumitted && (
+        <div className="md:flex md:flex-row-reverse md:items-center md:justify-center">
+          <AsideImg />
+          <div>
+            <Header />
+            <Form onSubmit={handleSubmit} />
+          </div>
         </div>
-      </div>
+      )}
+      {isSumitted && <Success email={submittedEmail} />}
     </div>
   );
 }
