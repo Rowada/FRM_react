@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <section className="flex flex-col justify-center mx-auto h-full gap-5 px-5 md:px-10">
-      <h1 className="text-4xl font-bold text-text pt-5 lg:text-5xl">
+      <h1 className="text-4xl font-bold text-text pt-5 md:text-5xl">
         Stay updated!
       </h1>
 

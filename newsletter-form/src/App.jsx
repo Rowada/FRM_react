@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <div className="bg-secondary h-screen w-screen md:h-full md:w-full md:p-4 md:rounded-3xl">
+    <div className="bg-secondary h-screen w-screen sm:h-full sm:w-full sm:p-4 sm:rounded-3xl">
       {!isSumitted && (
         <div className="md:flex md:flex-row-reverse md:items-center md:justify-center">
           <AsideImg />
