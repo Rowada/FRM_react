@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution : [Add solution URL here](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/newsletter-signup-form-react-gMJNcDMUAu)
+- [Live](https://newsletter-form-fm.vercel.app/)
 
 ### Built with
 
