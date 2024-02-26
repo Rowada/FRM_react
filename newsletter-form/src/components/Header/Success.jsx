@@ -1,8 +1,11 @@
 // @ts-nocheck
-
 import successIcon from "../../assets/images/icon-success.svg";
 
-export default function Success({ email }) {
+export default function Success({ email, onDismiss }) {
+  const handleDismiss = () => {
+    onDismiss();
+  };
+
   return (
     <div className="pt-20 mx-5 h-full flex flex-col justify-between sm:pt-5">
       <div>
@@ -17,7 +20,11 @@ export default function Success({ email }) {
           the button inside to confirm your subscription
         </p>
       </div>
-      <button className="block w-full mb-10 bg-text text-secondary font-bold text-sm rounded-md py-3 px-3 hover:bg-gradient-to-l hover:from-primary hover:to-hover sm:mb-5">
+
+      <button
+        onClick={handleDismiss}
+        className="block w-full mb-10 bg-text text-secondary font-bold text-sm rounded-md py-3 px-3 hover:bg-gradient-to-l hover:from-primary hover:to-hover sm:mb-5"
+      >
         Dismiss message
       </button>
     </div>
