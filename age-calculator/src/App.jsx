@@ -1,12 +1,12 @@
 // @ts-nocheck
 
+import { Main } from "./components/main/Main";
+
 function App() {
   return (
-    <>
-      <h1 className="text-5xl font-italic text-text">
-        <span className="text-primary">38</span>years
-      </h1>
-    </>
+    <div>
+      <Main />
+    </div>
   );
 }
 
