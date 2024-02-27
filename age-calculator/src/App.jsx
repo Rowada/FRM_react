@@ -3,7 +3,9 @@
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello World!!</h1>
+      <h1 className="text-5xl font-italic text-text">
+        <span className="text-primary">38</span>years
+      </h1>
     </>
   );
 }
