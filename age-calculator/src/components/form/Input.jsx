@@ -2,7 +2,7 @@ import React from "react";
 
 export const Input = ({ label, value, placeholder, id, onChange }) => {
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col">
       <label className="text-accent uppercase" htmlFor={id}>
         {label}
       </label>

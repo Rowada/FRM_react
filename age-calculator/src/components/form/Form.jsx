@@ -1,4 +1,4 @@
-import React from "react";
+// @ts-nocheck
 import arrowIcon from "../../assets/images/icon-arrow.svg";
 import { Input } from "./Input";
 
@@ -32,10 +32,10 @@ export const Form = () => {
           />
         </div>
 
-        <div className="flex mt-10 relative">
+        <div className="flex mt-10 relative items-center justify-center md:justify-end">
           <span className="bg-background h-[1px] w-full"></span>
 
-          <button className="rounded-full p-3 bg-primary absolute -top-8 right-0 hover:bg-text">
+          <button className="rounded-full p-3 bg-primary absolute hover:bg-text">
             <img className="w-10 h-auto" src={arrowIcon} alt="arrow-icon" />
           </button>
         </div>
