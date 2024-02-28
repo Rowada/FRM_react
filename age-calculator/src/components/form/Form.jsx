@@ -6,32 +6,32 @@ export const Form = () => {
     <div>
       <form>
         <div className="flex items-center justify-start gap-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col flex-grow">
             <label className="text-accent uppercase" htmlFor="day">
               day
             </label>
             <input
-              className="border block border-background rounded-md py-3 pl-3"
+              className="border border-background rounded-md py-3 pl-3 w-full"
               type="text"
               id="day"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col flex-grow">
             <label className="text-accent uppercase" htmlFor="month">
               month
             </label>
             <input
-              className="border border-background rounded-md py-3 pl-3"
+              className="border border-background rounded-md py-3 pl-3 w-full"
               type="text"
               id="month"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col flex-grow">
             <label className="text-accent uppercase" htmlFor="year">
               year
             </label>
             <input
-              className="border border-background rounded-md py-3 pl-3"
+              className="border border-background rounded-md py-3 pl-3 w-full"
               type="text"
               id="year"
             />
