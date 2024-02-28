@@ -1,41 +1,35 @@
 import React from "react";
 import arrowIcon from "../../assets/images/icon-arrow.svg";
+import { Input } from "./Input";
 
 export const Form = () => {
   return (
     <div>
       <form>
         <div className="flex items-center justify-start gap-4">
-          <div className="flex flex-col flex-grow">
-            <label className="text-accent uppercase" htmlFor="day">
-              day
-            </label>
-            <input
-              className="border border-background rounded-md py-3 pl-3 w-full"
-              type="text"
-              id="day"
-            />
-          </div>
-          <div className="flex flex-col flex-grow">
-            <label className="text-accent uppercase" htmlFor="month">
-              month
-            </label>
-            <input
-              className="border border-background rounded-md py-3 pl-3 w-full"
-              type="text"
-              id="month"
-            />
-          </div>
-          <div className="flex flex-col flex-grow">
-            <label className="text-accent uppercase" htmlFor="year">
-              year
-            </label>
-            <input
-              className="border border-background rounded-md py-3 pl-3 w-full"
-              type="text"
-              id="year"
-            />
-          </div>
+          <Input
+            label="day"
+            id="day"
+            placeholder="DD"
+            value=""
+            onChange={() => null}
+          />
+
+          <Input
+            label="month"
+            id="month"
+            placeholder="MM"
+            value=""
+            onChange={() => null}
+          />
+
+          <Input
+            label="year"
+            id="year"
+            placeholder="YYYY"
+            value=""
+            onChange={() => null}
+          />
         </div>
 
         <div className="flex mt-10 relative">
