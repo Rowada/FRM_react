@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Input = ({ label, value, placeholder, id, onChange }) => {
+export const Input = ({ label, value, placeholder, id, onChange, error }) => {
   return (
     <div className="flex flex-col">
       <label
@@ -18,6 +18,7 @@ export const Input = ({ label, value, placeholder, id, onChange }) => {
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
       />
+      <span className="text-[10px] text-accent font-italic pt-1">{error}</span>
     </div>
   );
 };

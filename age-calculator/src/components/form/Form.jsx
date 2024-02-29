@@ -1,34 +1,59 @@
 // @ts-nocheck
+import { useState } from "react";
 import arrowIcon from "../../assets/images/icon-arrow.svg";
 import { Input } from "./Input";
 
 export const Form = () => {
+  const [day, setDay] = useState("");
+  const [month, setMonth] = useState("");
+  const [year, setYear] = useState("");
+  const [error, setError] = useState(false);
+
+  // Gérez le changement de chaque champ
+  const handleDayChange = (newValue) => {
+    setDay(newValue);
+  };
+
+  const handleMonthChange = (newValue) => {
+    setMonth(newValue);
+  };
+
+  const handleYearChange = (newValue) => {
+    setYear(newValue);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log("Valeurs soumises :", { day, month, year });
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="flex items-center justify-start gap-4">
           <Input
             label="day"
             id="day"
             placeholder="dd"
-            value=""
-            onChange={() => null}
+            value={day}
+            onChange={handleDayChange}
           />
 
           <Input
             label="month"
             id="month"
             placeholder="mm"
-            value=""
-            onChange={() => null}
+            value={month}
+            onChange={handleMonthChange}
           />
 
           <Input
             label="year"
             id="year"
             placeholder="yyyy"
-            value=""
-            onChange={() => null}
+            value={year}
+            onChange={handleYearChange}
           />
         </div>
 
