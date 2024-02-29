@@ -23,6 +23,13 @@ export default {
 
       borderRadius: {
         "4xl": "32px",
+        "6xl": "64px",
+        "7xl": "96px",
+        "8xl": "128px",
+      },
+
+      spacing: {
+        128: "37.5rem",
       },
     },
   },
