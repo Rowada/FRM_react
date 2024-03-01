@@ -3,7 +3,7 @@ import { useState } from "react";
 import arrowIcon from "../../assets/images/icon-arrow.svg";
 import { Input } from "./Input";
 
-export const Form = () => {
+export const Form = ({ onSubmit }) => {
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
@@ -62,7 +62,6 @@ export const Form = () => {
       }
     }
 
-    // Vérifier la validité de la date complète
     if (day && month && year) {
       const dayNum = parseInt(day, 10);
       const monthNum = parseInt(month, 10);
@@ -81,6 +80,7 @@ export const Form = () => {
 
     if (Object.keys(validationErrors).length === 0) {
       console.log("Valeurs soumises :", { day, month, year });
+      onSubmit({ day, month, year });
     }
   };
 

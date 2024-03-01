@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Age = () => {
+export const Age = ({ formData }) => {
   return (
     <div>
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabolditalic">
