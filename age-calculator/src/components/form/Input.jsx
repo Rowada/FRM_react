@@ -18,7 +18,10 @@ export const Input = ({ label, value, placeholder, id, onChange, error }) => {
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
       />
-      <span className="text-[10px] text-accent font-italic pt-1">{error}</span>
+
+      {error && (
+        <span className="text-[10px] text-accent font-italic">{error}</span>
+      )}
     </div>
   );
 };
