@@ -115,7 +115,7 @@ export const Form = ({ onSubmit }) => {
           />
         </div>
 
-        <div className="flex my-12 md:my-8 relative items-center justify-center md:justify-end">
+        <div className="flex my-14 md:my-8 relative items-center justify-center md:justify-end">
           <span className="bg-background h-[1px] w-full"></span>
 
           <button

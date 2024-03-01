@@ -2,7 +2,7 @@ import React from "react";
 
 export const Input = ({ label, value, placeholder, id, onChange, error }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
       <label
         className="text-accent uppercase text-xs tracking-widest font-bold pb-1"
         htmlFor={id}
@@ -20,7 +20,9 @@ export const Input = ({ label, value, placeholder, id, onChange, error }) => {
       />
 
       {error && (
-        <span className="text-[10px] text-accent font-italic">{error}</span>
+        <span className="text-[10px] text-accent font-italic absolute top-full left-0">
+          {error}
+        </span>
       )}
     </div>
   );

@@ -49,15 +49,15 @@ export const Age = ({ formData }) => {
   return (
     <div>
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabolditalic">
-        <span className="text-primary tracking-wide pr-1">{age.years}</span>
+        <span className="text-primary tracking-wide pr-2">{age.years}</span>
         years
       </h2>
       <h2 className="text-5xl leading-snug sm:text-6xl md:text-7xl font-extrabolditalic">
-        <span className="text-primary tracking-wide pr-1">{age.months}</span>
+        <span className="text-primary tracking-wide pr-2">{age.months}</span>
         months
       </h2>
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabolditalic">
-        <span className="text-primary tracking-wide pr-1">{age.days}</span>
+        <span className="text-primary tracking-wide pr-2">{age.days}</span>
         days
       </h2>
     </div>
