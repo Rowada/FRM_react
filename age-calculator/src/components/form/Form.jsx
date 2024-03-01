@@ -79,7 +79,6 @@ export const Form = ({ onSubmit }) => {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      console.log("Valeurs soumises :", { day, month, year });
       onSubmit({ day, month, year });
     }
   };
