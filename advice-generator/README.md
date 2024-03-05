@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution]()
-- [Live]()
+- [Solution](https://www.frontendmentor.io/solutions/advice-generator-app-react-tailwindcss-nuXbXzb8Xe)
+- [Live](https://frm-advice-generator.vercel.app/)
 
 ## My process
 
