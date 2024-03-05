@@ -14,7 +14,7 @@ export const Main = () => {
   }, []);
 
   return (
-    <div className="bg-background rounded-md relative mx-3 py-10 flex flex-col justify-center items-center md:px-10">
+    <div className="bg-background rounded-lg relative mx-3 py-10 flex flex-col justify-center items-center md:px-10">
       <p className=" uppercase text-primary pb-5 text-sm tracking-widest font-semibold">
         advice #{isLoading ? "..." : adviceId}
       </p>
