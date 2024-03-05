@@ -18,7 +18,7 @@ export const Main = () => {
       <p className=" uppercase text-primary pb-5 text-sm tracking-widest font-semibold">
         advice #{isLoading ? "..." : adviceId}
       </p>
-      <h1 className="text-2xl font-extrabold text-text text-center px-3 max-w-[420px] md:mb-5">
+      <h1 className="text-2xl font-extrabold text-text text-center px-3 max-w-120 md:mb-5">
         {isLoading ? "Loading..." : <q>{advice}</q>}
         {error && <span>Error : {error}</span>}
       </h1>

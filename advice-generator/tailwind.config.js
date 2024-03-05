@@ -14,9 +14,16 @@ export default {
       fontFamily: {
         body: ["Manrope", "sans-serif"],
       },
+      spacing: {
+        120: "26.25rem",
+      },
 
       boxShadow: {
         neon: "0 0 5px hsl(150, 100%, 66%), 0 0 10px hsl(150, 100%, 66%), 0 0 20px hsl(150, 100%, 66%), 0 0 50px",
+      },
+
+      letterSpacing: {
+        widest: ".25em",
       },
     },
   },
