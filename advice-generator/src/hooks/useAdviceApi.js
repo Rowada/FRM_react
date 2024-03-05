@@ -1,8 +1,9 @@
 // @ts-ignore
 import { useEffect, useState } from "react";
 
-const useAdviceApi = () => {
+const useAdviceApi = (reload) => {
   const [advice, setAdvice] = useState("");
+  const [adviceId, setAdviceId] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -18,6 +19,7 @@ const useAdviceApi = () => {
 
         const data = await response.json();
         setAdvice(data.slip.advice);
+        setAdviceId(data.slip.id);
         setError(null);
       } catch (error) {
         setError(error.message);
@@ -27,9 +29,9 @@ const useAdviceApi = () => {
     };
 
     fetchData();
-  }, []);
+  }, [reload]);
 
-  return { advice, isLoading, error };
+  return { advice, adviceId, isLoading, error };
 };
 
 export default useAdviceApi;

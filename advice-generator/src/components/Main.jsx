@@ -1,20 +1,26 @@
-import React from "react";
-
-import dividedMobile from "../assets/images/pattern-divider-mobile.svg";
+// @ts-nocheck
+import { useState, useCallback } from "react";
 import dividedDesktop from "../assets/images/pattern-divider-desktop.svg";
+import dividedMobile from "../assets/images/pattern-divider-mobile.svg";
+import useAdviceApi from "../hooks/useAdviceApi";
 import { Button } from "./Button";
 
 export const Main = () => {
+  const [reload, setReload] = useState(false);
+  const { advice, adviceId, isLoading, error } = useAdviceApi(reload);
+
+  const handleReload = useCallback(() => {
+    setReload((prevReload) => !prevReload);
+  }, []);
+
   return (
     <div className="bg-background rounded-md relative mx-3 py-10 flex flex-col justify-center items-center md:px-10">
       <p className=" uppercase text-primary pb-5 text-sm tracking-widest font-semibold">
-        advice #117
+        advice #{isLoading ? "..." : adviceId}
       </p>
       <h1 className="text-2xl font-extrabold text-text text-center px-3 max-w-[420px] md:mb-5">
-        <q>
-          It is easy to sit up and take notice, what's difficult is getting up
-          and taking action.
-        </q>
+        {isLoading ? "Loading..." : <q>{advice}</q>}
+        {error && <span>Error : {error}</span>}
       </h1>
       <div className="max-w-[420px] px-3">
         <img
@@ -29,7 +35,7 @@ export const Main = () => {
           alt="divided-desktop"
         />
       </div>
-      <Button />
+      <Button onClick={handleReload} />
     </div>
   );
 };
